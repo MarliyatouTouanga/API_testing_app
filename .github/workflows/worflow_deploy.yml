@@ -18,8 +18,8 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@latest
         with:
-          username: ${{ marliyatou }}
-          password: ${{ Lysandre1 }}
+          username: ${{ secrets.marliyatou }}
+          password: ${{ secrets.DOCKER_HUB_TOKEN }}
 
       - name: Build Docker image
         run: |
